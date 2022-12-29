@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -44,4 +45,22 @@ public class Main {
         else permit = "может кататься без сопровождения взрослого";
         System.out.println("Если ребенку " + age + " лет то он " + permit);
         }
+    public static void task6() {
+        System.out.println("Задача 5");
+        //вводные
+        int seatPassenger = 55;
+        int standingPassenger = 30;
+        //параметры вагона
+        int fullPlaces = 102;
+        int seatPlaces = 60;
+        int standingPlaces = fullPlaces - seatPlaces;
+        // решение
+        int freeSeatPlaces =  seatPlaces - seatPassenger;
+        int freeStandingPlases = standingPlaces - standingPassenger;
+        if (freeSeatPlaces > 0 && freeStandingPlases > 0) System.out.println("Места есть сидящие: " + freeSeatPlaces + ", стоячие: " + freeStandingPlases);
+        else if (freeSeatPlaces > 0 && freeStandingPlases == 0) System.out.println("Места есть сидячие: " + freeSeatPlaces);
+        else if (freeSeatPlaces == 0 && freeStandingPlases > 0) System.out.println("Места есть стоячие: " + freeStandingPlases);
+        else System.out.println("Мест нет!");
+    }
+
 }
