@@ -4,6 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -33,5 +34,14 @@ public class Main {
         else if (age > 24) need = "нужно ходить на работу";
         else need = "подрастай малыш";
         System.out.println("Если возраст человека " + age + " то " + need);
+        }
+    public static void task5() {
+        System.out.println("Задача 5");
+        int age = 4;
+        String permit;
+        if (age < 5) permit = "не может кататься на аттракционе";
+        else if (age >= 5 && age < 14) permit = "может кататься только в сопровождении взрослого";
+        else permit = "может кататься без сопровождения взрослого";
+        System.out.println("Если ребенку " + age + " лет то он " + permit);
         }
 }
