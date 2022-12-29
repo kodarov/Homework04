@@ -46,7 +46,7 @@ public class Main {
         System.out.println("Если ребенку " + age + " лет то он " + permit);
         }
     public static void task6() {
-        System.out.println("Задача 5");
+        System.out.println("Задача 6");
         //вводные
         int seatPassenger = 55;
         int standingPassenger = 30;
@@ -62,5 +62,4 @@ public class Main {
         else if (freeSeatPlaces == 0 && freeStandingPlases > 0) System.out.println("Места есть стоячие: " + freeStandingPlases);
         else System.out.println("Мест нет!");
     }
-
 }
