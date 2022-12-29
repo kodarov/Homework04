@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1() {
         System.out.println("Задача 1");
@@ -61,5 +62,14 @@ public class Main {
         else if (freeSeatPlaces > 0 && freeStandingPlases == 0) System.out.println("Места есть сидячие: " + freeSeatPlaces);
         else if (freeSeatPlaces == 0 && freeStandingPlases > 0) System.out.println("Места есть стоячие: " + freeStandingPlases);
         else System.out.println("Мест нет!");
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        int one = 6;
+        int two = 30;
+        int three = -50;
+        if (one > two && one > three) System.out.println("Самое большее " + one);
+        else if (two > three) System.out.println("Самое большее " + two);
+        else System.out.println("Самое большее " + three);
     }
 }
